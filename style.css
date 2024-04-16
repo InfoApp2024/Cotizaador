@@ -24,9 +24,12 @@ header {
   margin-bottom: 30px;
 }
 
-.company-logo {
-  max-width: 70px;
+/* Estilos para el logo */
+.company-info img {
+  width: 65px;
+  margin-left: 10px;
 }
+
 
 h1 {
   font-size: 28px;
