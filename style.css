@@ -4,60 +4,42 @@ body {
     padding: 20px;
 }
 
-.pdf-container {
-    background-color: #fff;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.header {
+header {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.contact-info {
-    margin-top: 10px;
+.quote-info {
+    margin-bottom: 30px;
 }
 
-.banner {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+.client-info p {
+    margin: 5px 0;
 }
 
-.date-row {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.client-info,
-.project-info {
-    margin-top: 20px;
-}
-
-.description {
-    margin-top: 40px;
-}
-
-.table-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 table {
+    width: 100%;
     border-collapse: collapse;
-    width: 45%;
+    margin-bottom: 20px;
 }
 
 th, td {
-    border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
 th {
-    background-color: #f2f2f2;
-}
+    background-color: #f2f2f
