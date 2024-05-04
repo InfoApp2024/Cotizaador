@@ -26,8 +26,9 @@ body {
 }
 
 .header__logo {
-  font-size: 14px;
-  margin-right: auto;
+  width: 20px; /* Ajusta el valor según el tamaño deseado */
+  height: auto; /* Mantiene la relación de aspecto */
+  margin-right: auto; /* Empuja la imagen hacia la izquierda */
 }
 
 .header__title {
