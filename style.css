@@ -60,5 +60,7 @@ th {
 .inline-data {
   margin-left: 5px;
   margin-right: 5px;
-  font-size: 5px;
+  font-size: 7px;
+  color: #666; /* Cambiar el color del texto a gris oscuro */
+  font-weight: bold; /* Hacer el texto en negrita */
 }
