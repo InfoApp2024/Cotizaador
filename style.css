@@ -22,14 +22,17 @@ header {
 header div {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
+  justify-content: space-between; /* Alinea los elementos a los extremos */
 }
 
 header div p {
   width: 100px;
   height: auto;
-  margin-right: 10px;
+  margin-right: 0; /* Elimina el margen derecho */
+}
+
+header div h1 {
+  margin: 0; /* Elimina los márgenes superiores e inferiores */
 }
 
 /* Quote Info */
