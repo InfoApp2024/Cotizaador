@@ -1,71 +1,31 @@
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Encabezado */
-header {
-    background-color: #333;
-    color: #fff;
+.cotizacion {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #f4f4f4;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Contenido principal */
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form input,
-form select,
-form textarea {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* Pie de página */
-footer {
-    background-color: #333;
-    color: #fff;
+.cotizacion h1 {
     text-align: center;
-    padding: 20px;
+    color: #333;
+}
+
+.detalles-servicio {
+    margin-top: 30px;
+}
+
+.detalles-servicio p {
+    margin: 10px 0;
+}
+
+.detalles-servicio p strong {
+    font-weight: bold;
 }
