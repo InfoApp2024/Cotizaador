@@ -1,88 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cotización</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotización de Servicios</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
     <header>
-      <div class="company-logo">
-        <img src="logo.png" alt="Company Logo">
-      </div>
-      <h1>Cotización</h1>
+        <h1>Cotización de Servicios</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-      <section class="quote-info">
-        <div>
-          <label>ORDEN INTERNA:</label>
-          <span class="quote-number"></span>
-        </div>
-        <div>
-          <label>FECHA:</label>
-          <span class="quote-date"></span>
-        </div>
-        <div>
-          <label>EQUIPO:</label>
-          <span class="equipment"></span>
-        </div>
-        <div>
-          <label>CLIENTE:</label>
-          <span class="client"></span>
-        </div>
-      </section>
-      <section class="details">
-        <table>
-          <thead>
-            <tr>
-              <th>Concepto</th>
-              <th>Detalle</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Valor HR</td>
-              <td class="hourly-rate"></td>
-            </tr>
-            <tr>
-              <td>Colaboradores</td>
-              <td class="collaborators"></td>
-            </tr>
-            <tr>
-              <td>Tiempo Total</td>
-              <td class="total-time"></td>
-            </tr>
-            <tr>
-              <td>Repuestos</td>
-              <td class="spare-parts"></td>
-            </tr>
-            <tr>
-              <td>Utilidad</td>
-              <td class="profit"></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section class="status">
-        <div>
-          <label>DESCARGAS:</label>
-          <span class="downloads"></span>
-        </div>
-        <div>
-          <label>ENVIADO:</label>
-          <span class="sent"></span>
-        </div>
-        <div>
-          <label>ESTADO:</label>
-          <span class="status-text"></span>
-        </div>
-      </section>
+        <section>
+            <h2>Solicita tu cotización</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="servicio">Servicio:</label>
+                <select id="servicio" name="servicio">
+                    <option value="">Selecciona un servicio</option>
+                    <option value="servicio1">Servicio 1</option>
+                    <option value="servicio2">Servicio 2</option>
+                    <option value="servicio3">Servicio 3</option>
+                </select>
+                <label for="detalles">Detalles adicionales:</label>
+                <textarea id="detalles" name="detalles"></textarea>
+                <button type="submit">Enviar solicitud</button>
+            </form>
+        </section>
     </main>
     <footer>
-      <p>&copy; 2023 Nombre de la Empresa. Todos los derechos reservados.</p>
+        <p>&copy; 2023 Cotización de Servicios. Todos los derechos reservados.</p>
     </footer>
-  </div>
 </body>
 </html>
