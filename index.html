@@ -3,65 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cotización de Servicios</title>
+    <title>Cotización</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="pdf-container">
-        <div class="header">
-            <h1>Full House Viviendas Industrializadas</h1>
-            <div class="contact-info">
-                <p>Dirección: AV. La Cordillera 4737 - Planta Alta Ofic 1</p>
-                <p>Ubicación: Barrio los Ángeles, Ciudad de Córdoba, Provincia de Córdoba, CP: X5001</p>
-                <p>Tel o WhatsApp: (0351) - 7600068 / (03541) - 543983</p>
+    <div class="container">
+        <header>
+            <h1>INVERSIONES SALE & RENTAL DEL CARIBE S.A.S</h1>
+            <p>ALQUILER Y VENTA DE PLANTAS ELECTRICAS - EQUIPOS Y MAQUINARIAS - SOPORTE Y MANTENIMIENTO</p>
+            <p>VIA 40 N.85-340 - Cel: 3186195691 - 3122573551 - Email: gerencia@srdelcaribe.com</p>
+        </header>
+
+        <div class="quote-info">
+            <h2>COTIZACIÓN No.-14</h2>
+            <div class="client-info">
+                <p>CLIENTE: CEMEX</p>
+                <p>FECHA: 22-jun-2016</p>
+                <p>CIUDAD: BOGOTA</p>
+                <p>DIRECCIÓN: Nº PROVEEDOR: 5063397</p>
+                <p>T. PAGO: A CONVENIR</p>
             </div>
         </div>
-        
-        <div class="banner">
-            <h2>PRESUPUESTO OBRA GRIS</h2>
-        </div>
-        
-        <div class="date-row">
-            <p><strong>Fecha:</strong></p>
-            <p><strong>Fecha de vencimiento:</strong></p>
-        </div>
-        
-        <div class="client-info">
-            <p><strong>Cliente:</strong> NOMBRE DEL CLIENTE</p>
-            <p><strong>Localidad:</strong> UBICACION</p>
-        </div>
-        
-        <div class="project-info">
-            <p><strong>Sistema Wood Frame:</strong></p>
-            <p><strong>Linea:</strong></p>
-        </div>
-        
-        <div class="description">
-            <h3>Memora Descriptiva Obra Gris</h3>
-            <div class="table-container">
-                <table>
+
+        <div class="labor-section">
+            <h3>MANO DE OBRA</h3>
+            <table>
+                <thead>
                     <tr>
-                        <th colspan="2">Ambiente</th>
+                        <th>ITEM</th>
+                        <th>#HORAS</th>
+                        <th>TECNICOS</th>
+                        <th>VR.UNITARIO</th>
+                        <th>VR.TOTAL</th>
                     </tr>
+                </thead>
+                <tbody>
                     <tr>
-                        <td>Dormitorios</td>
-                        <td></td>
+                        <td>DESCRIPCION</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>52,000$</td>
+                        <td>416,000$</td>
                     </tr>
                     <!-- Agrega más filas según sea necesario -->
-                </table>
-                <table>
+                </tbody>
+                <tfoot>
                     <tr>
-                        <th colspan="2">Planilla de Superficies</th>
+                        <td colspan="4">SUBTOTAL MANO DE OBRA</td>
+                        <td>3,068,000$</td>
                     </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="supplies-section">
+            <h3>REPUESTOS E INSUMOS</h3>
+            <table>
+                <thead>
                     <tr>
-                        <td>M² Cubiertos</td>
-                        <td></td>
+                        <th>ITEM</th>
+                        <th>RENDIM-CANTIDAD</th>
+                        <th>VR. UNITARIO</th>
+                        <th>VR. TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DESCRIPCION</td>
+                        <td>1</td>
+                        <td>$ 25,000</td>
+                        <td>25,000$</td>
                     </tr>
                     <!-- Agrega más filas según sea necesario -->
-                </table>
-            </div>
-            <p>Al presupuesto actual, se le adjunta el plano de la vivienda y los renders de ser una tipología ofrecida por la empresa. También trabajamos proyectos a medida, en ese caso el cliente tiene que pasarle el plano o croquis al Asesor para realizar la Cotización.</p>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">SUBTOTAL REPUESTOS E INSUMOS</td>
+                        <td>25,000$</td>
+                    </tr>
+                </tfoot>
+            </table>
         </div>
+
+        <div class="transport-section">
+            <h3>COSTO TRANSPORTE</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ITEM</th>
+                        <th>RENDIM-CANTIDAD</th>
+                        <th>VR. UNITARIO</th>
+                        <th>VR. TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DESCRIPCION</td>
+                        <td>2</td>
+                        <td>$ 35,000</td>
+                        <td>$ 70,000</td>
+                    </tr>
+                    <!-- Agrega más filas según sea necesario -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">SUBTOTAL TRANSPORTE</td>
+                        <td>70,000$</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="tools-section">
+            <h3>COSTO ALQUILER HERRAMIENTAS</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ITEM</th>
+                        <th>RENDIM-CANTIDAD</th>
+                        <th>VR. UNITARIO</th>
+                        <th>VR. TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DESCRIPCION</td>
+                        <td>2</td>
+                        <td>$ 25,000</td>
+                        <td>$ 50,000</td>
+                    </tr>
+                    <!-- Agrega más filas según sea necesario -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">SUBTOTAL ALQUILER HERRAMIENTAS</td>
+                        <td>50,000$</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="totals">
+            <p>SUBTOTAL: 3,213,000$</p>
+            <p>DESCUENTO: </p>
+            <p>VALOR - DESC: 3,213,000$</p>
+            <p>IVA 16%: 514,080$</p>
+            <p>TOTAL: 3,727,080$</p>
+        </div>
+
+        <div class="notes">
+            <p>OBSERVACIONES:</p>
+            <ul>
+                <li>* El costo de transporte corresponde a: Combustible, peajes, alimentacion, hidratacion y rodaje</li>
+                <li>* Las horas de movilizacion corresponden al tiempo de desplazamiento Taller S&R Barranquilla a Valledupar, Barranquilla a Santa Marta, Barranquilla Cartagena</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Atentamente,</p>
+            <p>GUSTAVO BLANDON</p>
+            <p>Inversiones Sale & Rental del Caribe S.A.S</p>
+            <p>Cel. 3186195691</p>
+        </footer>
     </div>
 </body>
 </html>
