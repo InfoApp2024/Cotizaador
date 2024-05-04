@@ -23,6 +23,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+   width: 20px; /* Ajusta el valor según el tamaño deseado */
 }
 
 .header__logo {
