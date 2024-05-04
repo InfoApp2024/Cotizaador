@@ -57,10 +57,27 @@ th, td {
 th {
   background-color: #f2f2f2;
 }
-.inline-data {
-  margin-left: 5px;
-  margin-right: 5px;
-  font-size: 7px;
-  color: #666; /* Cambiar el color del texto a gris oscuro */
-  font-weight: bold; /* Hacer el texto en negrita */
+.contenedor {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 10px; /* Espacio entre el logo y el nombre */
+    width: 60px; /* Cambiar el ancho del logo */
+    height: auto; /* Mantener la proporción del logo */
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 10px; /* Espacio entre el logo y el nombre */
+}
+
+h1 {
+    margin: 0; /* Eliminar márgenes predeterminados */
+    text-align: center; /* Centrar el texto */
 }
