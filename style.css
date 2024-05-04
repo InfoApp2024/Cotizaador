@@ -14,26 +14,22 @@ body {
 }
 
 /* Header */
-.header {
+header {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.header__logo-container {
+header div {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-   width: 20px; /* Ajusta el valor según el tamaño deseado */
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
-.header__logo {
-  width: 20px; /* Ajusta el valor según el tamaño deseado */
-  height: auto; /* Mantiene la relación de aspecto */
-  margin-right: auto; /* Empuja la imagen hacia la izquierda */
-}
-
-.header__title {
-  text-align: center;
+header div p {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
 }
 
 /* Quote Info */
@@ -41,7 +37,7 @@ body {
   margin-bottom: 30px;
 }
 
-.quote-info__client-info p {
+.quote-info .client-info p {
   margin: 5px 0;
 }
 
@@ -52,21 +48,38 @@ body {
 }
 
 /* Tables */
-.table {
+table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
 }
 
-.table th,
-.table td {
+th, td {
   padding: 8px;
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
 
-.table th {
+th {
   background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Header row color */
+thead th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Footer row color */
+tfoot td {
+  background-color: #e6e6e6;
+  font-weight: bold;
 }
 
 /* Totals */
