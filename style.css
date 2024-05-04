@@ -100,3 +100,11 @@ tfoot td {
 footer {
   text-align: center;
 }
+.custom-table {
+  width: auto; /* ajusta el ancho de la tabla según el contenido */
+}
+
+.totals {
+  text-align: right; /* alinea el contenido a la derecha */
+}
+
