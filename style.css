@@ -1,31 +1,350 @@
+/*GENERAL*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  .pdf-container {
+    width: 210mm; 
+    height: 297mm; 
+    margin: 20px auto; 
+    border: 1px solid #ccc; 
+    page-break-after: always; 
+    overflow: hidden; 
+  }
 
-.cotizacion {
-    width: 80%;
-    margin: 50px auto;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-.cotizacion h1 {
+  .white-text {
+    color: white;
     text-align: center;
-    color: #333;
-}
+  }
 
-.detalles-servicio {
-    margin-top: 30px;
-}
+  .margin-10{
+    margin: 10px;
+  }
+ .margin-20{
+  margin: 20px;
+ }
 
-.detalles-servicio p {
-    margin: 10px 0;
-}
+ .margin-30{
+  margin: 30px;
+ }
 
-.detalles-servicio p strong {
+ 
+ .margin-40{
+  margin: 40px;
+ }
+ 
+ .margin-50{
+  margin: 50px;
+ }
+
+ 
+ .text-center{
+  text-align: center;
+ }
+  /*PDF1*/
+.pdf-content {
+    width: 100%; 
+    height: 100%; 
+    background-image: url(./assets/fondo-presupuesto-1.png);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding: 20px;
+    box-sizing: border-box; 
+  }
+
+.company-name {
     font-weight: bold;
+    font-size: 20px; 
+    margin-bottom: 3px; 
+}
+
+.contact-info {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 1px 0;
+}
+
+.banderin {
+    margin: 10px;
+    background-image: url(./assets/contenedor-black.png);
+    background-size: 100% 400%; 
+    background-position: center; 
+}
+
+.banderin-2{
+  margin: 10px;
+    background-image: url(./assets/contenedor-black-2.png);
+    background-size: 100% 400%; 
+    background-position: center; 
+
+}
+
+.banderin-red {
+    margin: 10px;
+    background-image: url(./assets/contenedor-red.png);
+    background-size: 100% 400%; 
+    background-position: center; 
+}
+
+.banderin-red-2{
+  margin: 10px;
+    background-image: url(./assets/contenedor-red-2.png);
+    background-size: 100% 200%; 
+    background-position: center; 
+}
+
+.blue-text{
+  color: #004AAD;
+}
+
+
+
+
+.fecha-row{
+  display: flex;
+  flex-direction: row;
+}
+.red-text{
+  color: red;
+  margin: 10px 80px 10px 30px;
+}
+
+/* Tabla */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid white; /* Borde blanco para todas las celdas */
+}
+
+
+.table th {
+  background-color: #ff6b6b; /* Fondo rosado oscuro para los títulos */
+  color: white; /* Texto blanco para los títulos */
+  text-align: center; /* Alineación centrada para los títulos */
+}
+
+.table td {
+  width: 50%;
+}
+
+.table th[colspan="2"] {
+  background-color: #FF9999;
+}
+
+.table tbody tr:nth-child(1) td,
+.table tbody tr:nth-child(2) td,
+.table tbody tr:nth-child(3) td,
+.table tbody tr:nth-child(4) td,
+.table tbody tr:nth-child(5) td,
+.table tbody tr:nth-child(6) td {
+  background-color: #ffb6c1; /* Fondo rosado claro para filas de cochera, galería, etc. */
+}
+
+.table tbody tr td:empty {
+  background-color: #ffe4e1; /* Fondo rosa claro para columnas vacías */
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+  /*PDF2*/
+  .pdf-content-2 {
+    width: 100%; 
+    height: 100%; 
+    background-image: url(./assets/fondo-presupuesto-2.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding: 20px; 
+    box-sizing: border-box; 
+  }
+   /*PDF3*/
+   .pdf-content-3 {
+    width: 100%; 
+    height: 100%; 
+    background-image: url(./assets/fondo-presupuesto-3.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding: 20px; 
+    box-sizing: border-box; 
+  }
+   /*PDF4*/
+   .pdf-content-4 {
+    width: 100%; 
+    height: 100%; 
+    background-image: url(./assets/fondo-presupuesto-4.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding: 20px; 
+    box-sizing: border-box; 
+  }
+   /*PDF5*/
+   .pdf-content-5 {
+    width: 100%; 
+    height: 100%; 
+    background-image: url(./assets/fondo-presupuesto-5.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding: 20px; 
+    box-sizing: border-box; 
+  }
+   /*PDF6*/
+   .pdf-content-6 {
+    width: 100%; 
+    height: 100%; 
+    background-image: url(./assets/fondo-presupuesto-6.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding: 20px; 
+    box-sizing: border-box; 
+  }
+   /*PDF7*/
+   .pdf-content-7 {
+    width: 100%; 
+    height: 100%; 
+    background-image: url(./assets/fondo-presupuesto-7.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding: 20px; 
+    box-sizing: border-box; 
+  }
+
+  
+   /*PDF8*/
+   .pdf-content-8 {
+    width: 100%; 
+    height: 100%; 
+    background-image: url(./assets/fondo-presupuesto-8.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding: 20px; 
+    box-sizing: border-box; 
+  }
+.photo-obra{
+  width: 350px;
+  height: 200px;
+}
+
+.right-ubication{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/*PDF-6-7*/
+.photo-qr{
+
+  width: 170px;
+  height: 170px;
+  
+}
+
+
+.new-bg-red{
+  background-color: #B40000;
+}
+
+.red-fullhouse{
+  color: #B40000;
+}
+
+.left-section,
+.right-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.left-section {
+    margin-right: 20px; /* Espacio entre la sección izquierda y la imagen */
+}
+
+.right-section {
+    margin-left: 20px; 
+}
+
+.red-fullhouse {
+    color: #B40000;
+    text-align: left; 
+    margin-top: 10px; 
+}
+
+.red-fullhouse.text-center {
+    text-align: center;
+}
+
+.text-block {
+    margin-top: 10px; /* Espacio entre cada bloque de texto */
+}
+
+.bonificacion{
+  margin: 40px;
+  text-align: center;
+}
+
+.row-qr{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 140px;
+}
+.tamanio-presupuesto{
+  font-size: 20px;
+  color: white;
+}
+
+.row-qr-7{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.img-plano{
+   max-width: 60%;
+}
+.max-width{
+    width: 600px;
+    height: auto;
+}
+
+  .cover{
+    object-fit: scale-down;
+    align-items: center;
+  }
+
+  .img[class]{
+    width: 100%;
+  } 
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
