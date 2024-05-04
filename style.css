@@ -4,33 +4,6 @@ body {
     padding: 20px;
 }
 
-.logo {
-    margin-right: 10px; /* Espacio entre el logo y el nombre */
-    width: 60px; /* Cambiar el ancho del logo */
-    height: auto; /* Mantener la proporción del logo */
-}
-
-.contenedor {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    margin-right: 10px; /* Espacio entre el logo y el nombre */
-}
-
-h1 {
-    margin: 0; /* Eliminar márgenes predeterminados */
-    text-align: center; /* Centrar el texto */
-}
-
-
-
-
-
-
-
-
 .container {
     max-width: 800px;
     margin: 0 auto;
