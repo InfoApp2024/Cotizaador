@@ -7,59 +7,47 @@
 </head>
 <body>
     <div class="container">
-        <!-- Encabezado de 2 columnas -->
+        <!-- Encabezado -->
         <div class="section-pair">
             <div class="info-box">
                 <div class="company-info">
                     <h1>J5 OUTSOURCING SAS</h1>
-                    <p>MANTENIMIENTO AUTOMOTRIZ</p>
-                    <p>NIT 901.387.834-5</p>
-                    <p>BARRANQUILLA - CARTAGENA</p>
-                    <p>COLOMBIA</p>
+                    <p class="subtitle">MANTENIMIENTO AUTOMOTRIZ</p>
+                    <p class="nit">NIT 901.387.834-5</p>
+                    <div class="location-details">
+                        <p>BARRANQUILLA - CARTAGENA</p>
+                        <p>COLOMBIA</p>
+                    </div>
                 </div>
             </div>
 
             <div class="info-box">
                 <table class="quote-table">
-                    <tr>
-                        <td class="label">Fecha:</td>
-                        <td>19/02/2025</td>
-                        <td class="label">Número:</td>
-                        <td>COT250219</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Cliente NIT:</td>
-                        <td colspan="3">900,893,254</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Razón Social:</td>
-                        <td colspan="3">Concreto Movil Colombia SAS</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Dirección:</td>
-                        <td colspan="3">CALLE 31 A 26 15 FLORIDABLANCA</td>
-                    </tr>
+                    <tr><td class="label">Fecha:</td><td>19/02/2025</td><td class="label">Número:</td><td>COT250219</td></tr>
+                    <tr><td class="label">Cliente NIT:</td><td colspan="3">900,893,254</td></tr>
+                    <tr><td class="label">Razón Social:</td><td colspan="3">Concreto Movil Colombia SAS</td></tr>
+                    <tr><td class="label">Dirección:</td><td colspan="3">CALLE 31 A 26 15 FLORIDABLANCA</td></tr>
                 </table>
             </div>
         </div>
 
-        <!-- Trabajos en 2 columnas -->
+        <!-- Trabajos -->
         <div class="section-pair">
             <div class="info-box">
                 <div class="box-header">
-                    <h3>Trabajos solicitados:</h3>
+                    <h3>Trabajos solicitados</h3>
                 </div>
                 <div class="box-content">
-                    <p>1. Medir diámetro de las aspas internas de las ollas de los mixers</p>
+                    <p class="main-task">1. Medir diámetro de las aspas internas de las ollas de los mixers</p>
                 </div>
             </div>
 
             <div class="info-box">
                 <div class="box-header">
-                    <h3>Trabajos a realizar:</h3>
+                    <h3>Trabajos a realizar</h3>
                 </div>
                 <div class="box-content">
-                    <ul>
+                    <ul class="task-list">
                         <li>Acceso a la olla - retirar tapa manhole</li>
                         <li>Toma de medidas</li>
                         <li>Cierre de tapa manhole</li>
@@ -69,14 +57,14 @@
             </div>
         </div>
 
-        <!-- Sección técnica en 2 columnas -->
+        <!-- Detalles técnicos -->
         <div class="section-pair">
             <div class="info-box">
                 <div class="box-header">
                     <h3>Observaciones</h3>
                 </div>
                 <div class="box-content">
-                    <p>Se requiere el equipo en el taller. Tiempo de entrega 4 horas</p>
+                    <p class="observation">Se requiere el equipo en el taller. Tiempo de entrega 4 horas</p>
                 </div>
             </div>
 
@@ -85,92 +73,47 @@
                     <h3>Vehículo</h3>
                 </div>
                 <div class="box-content">
-                    <table class="vehicle-table">
-                        <tr>
-                            <td>Clase vehículo:</td>
-                            <td><strong>Mixer varios</strong></td>
-                            <td>Marca:</td>
-                            <td>250219</td>
-                        </tr>
-                        <tr>
-                            <td>Modelo:</td>
-                            <td>-</td>
-                            <td>Kilometraje:</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Ubicación:</td>
-                            <td>Cartagena</td>
-                            <td>Placa:</td>
-                            <td>Varios</td>
-                        </tr>
+                    <table class="vehicle-details">
+                        <tr><td>Clase vehículo:</td><td><strong>Mixer varios</strong></td><td>Marca:</td><td>250219</td></tr>
+                        <tr><td>Modelo:</td><td>-</td><td>Kilometraje:</td><td>0</td></tr>
+                        <tr><td>Ubicación:</td><td>Cartagena</td><td>Placa:</td><td>Varios</td></tr>
                     </table>
                 </div>
             </div>
         </div>
 
-        <!-- Tabla principal -->
-        <table class="main-table">
+        <!-- Tabla de costos -->
+        <table class="cost-table">
             <thead>
                 <tr>
                     <th class="col-item">Ítem</th>
-                    <th class="col-concepto">Concepto</th>
-                    <th class="col-cantidad">Cant.</th>
-                    <th class="col-tiempo">Tiempo</th>
-                    <th class="col-unitario">Vr. unitario</th>
+                    <th class="col-concept">Concepto</th>
+                    <th class="col-qty">Cant.</th>
+                    <th class="col-time">Tiempo</th>
+                    <th class="col-unit">Vr. unitario</th>
                     <th class="col-total">Vr. Total</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Medir diámetro de las aspas internas</td>
-                    <td></td>
-                    <td></td>
-                    <td class="numeric">67.200</td>
-                    <td></td>
-                </tr>
-                <tr class="subitem">
-                    <td>1.1</td>
-                    <td>Acceso a la olla: desmontar tapa manhole</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr class="total-row">
-                    <td colspan="4">Total antes de IVA:</td>
-                    <td class="numeric">379.430</td>
-                    <td></td>
-                </tr>
-                <tr class="total-row">
-                    <td colspan="4">IVA</td>
-                    <td class="numeric">72.092</td>
-                    <td></td>
-                </tr>
-                <tr class="total-row">
-                    <td colspan="4">Total</td>
-                    <td class="numeric">451.522</td>
-                    <td></td>
-                </tr>
+                <tr><td>1</td><td>Medir diámetro de las aspas internas</td><td></td><td></td><td class="numeric">67.200</td><td></td></tr>
+                <tr class="subitem"><td>1.1</td><td>Acceso a la olla: desmontar tapa manhole</td><td></td><td></td><td></td><td></td></tr>
+                <tr class="total-row"><td colspan="4">Total antes de IVA:</td><td class="numeric">379.430</td><td></td></tr>
+                <tr class="total-row"><td colspan="4">IVA</td><td class="numeric">72.092</td><td></td></tr>
+                <tr class="total-row"><td colspan="4">Total</td><td class="numeric">451.522</td><td></td></tr>
             </tbody>
         </table>
 
         <!-- Pie de página -->
-        <div class="section-pair footer-section">
-            <div class="info-box">
-                <div class="validity">
-                    <p><strong>Vigencia:</strong> 30 días desde la fecha de expedición</p>
-                    <p>Tasa descuento financiero por pronto pago: 1,85% mes</p>
-                </div>
+        <div class="section-pair footer">
+            <div class="info-box validity">
+                <p class="validity-text"><strong>Vigencia:</strong> 30 días desde la fecha de expedición</p>
+                <p class="discount-rate">Tasa descuento financiero por pronto pago: 1,85% mes</p>
             </div>
             
-            <div class="info-box">
-                <div class="signature">
-                    <div class="signature-line"></div>
-                    <p>Jaime Sáenz Pérez</p>
-                    <p>Tel: +57 300 814 1986</p>
-                </div>
+            <div class="info-box signature">
+                <div class="signature-line"></div>
+                <p class="signatory">Jaime Sáenz Pérez</p>
+                <p class="contact">Tel: +57 300 814 1986</p>
             </div>
         </div>
     </div>
