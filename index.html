@@ -2,118 +2,132 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>COT250219 - Propuesta Técnica</title>
+    <title>COT250219 - Propuesta Técnica J5 Outsourcing</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <!-- Encabezado -->
-        <div class="section-pair">
-            <div class="info-box">
-                <div class="company-info">
-                    <h1>J5 OUTSOURCING SAS</h1>
-                    <p class="subtitle">MANTENIMIENTO AUTOMOTRIZ</p>
-                    <p class="nit">NIT 901.387.834-5</p>
-                    <div class="location-details">
-                        <p>BARRANQUILLA - CARTAGENA</p>
-                        <p>COLOMBIA</p>
-                    </div>
+        <!-- Encabezado Corporativo -->
+        <header class="company-header">
+            <img src="logo.png" class="company-logo" alt="Logo J5 Outsourcing">
+            <div class="header-details">
+                <h1>J5 OUTSOURCING SAS</h1>
+                <p class="company-subtitle">MANTENIMIENTO AUTOMOTRIZ ESPECIALIZADO</p>
+                <div class="company-meta">
+                    <span class="nit">NIT 901.387.834-5</span>
+                    <span class="location">BARRANQUILLA - CARTAGENA</span>
+                    <span class="contact-info">Tel: +57 300 814 1986 | contacto@j5outsourcing.com</span>
                 </div>
             </div>
+        </header>
 
-            <div class="info-box">
-                <table class="quote-table">
-                    <tr><td class="label">Fecha:</td><td>19/02/2025</td><td class="label">Número:</td><td>COT250219</td></tr>
-                    <tr><td class="label">Cliente NIT:</td><td colspan="3">900,893,254</td></tr>
-                    <tr><td class="label">Razón Social:</td><td colspan="3">Concreto Movil Colombia SAS</td></tr>
-                    <tr><td class="label">Dirección:</td><td colspan="3">CALLE 31 A 26 15 FLORIDABLANCA</td></tr>
+        <!-- Datos de Cotización -->
+        <div class="section-pair">
+            <div class="info-box quote-meta">
+                <table class="meta-table">
+                    <tr><th colspan="2" class="document-title">COTIZACIÓN #COT250219</th></tr>
+                    <tr><td>Fecha Emisión:</td><td>19/02/2025</td></tr>
+                    <tr><td>Validez:</td><td>30 días</td></tr>
+                    <tr><td>Versión:</td><td>1.0</td></tr>
+                </table>
+            </div>
+            
+            <div class="info-box client-info">
+                <table class="client-table">
+                    <tr><th colspan="2">DATOS DEL CLIENTE</th></tr>
+                    <tr><td>Razón Social:</td><td>Concreto Movil Colombia SAS</td></tr>
+                    <tr><td>NIT:</td><td>900.893.254</td></tr>
+                    <tr><td>Dirección:</td><td>CALLE 31 A 26 15 FLORIDABLANCA</td></tr>
+                    <tr><td>Contacto:</td><td>Contacto Principal</td></tr>
                 </table>
             </div>
         </div>
 
-        <!-- Trabajos -->
+        <!-- Detalles Técnicos -->
         <div class="section-pair">
-            <div class="info-box">
+            <div class="info-box technical-details">
                 <div class="box-header">
-                    <h3>Trabajos solicitados</h3>
+                    <h3><span class="icon">📋</span> Trabajos Solicitados</h3>
                 </div>
                 <div class="box-content">
-                    <p class="main-task">1. Medir diámetro de las aspas internas de las ollas de los mixers</p>
+                    <ol class="task-list">
+                        <li>Medir diámetro de las aspas internas de las ollas de los mixers</li>
+                        <li>Inspección técnica complementaria</li>
+                    </ol>
                 </div>
             </div>
 
-            <div class="info-box">
+            <div class="info-box procedure-details">
                 <div class="box-header">
-                    <h3>Trabajos a realizar</h3>
+                    <h3><span class="icon">⚙️</span> Procedimiento a Realizar</h3>
                 </div>
                 <div class="box-content">
-                    <ul class="task-list">
+                    <ul class="procedure-list">
                         <li>Acceso a la olla - retirar tapa manhole</li>
-                        <li>Toma de medidas</li>
-                        <li>Cierre de tapa manhole</li>
-                        <li>Generación de informes</li>
+                        <li>Toma de medidas con equipos certificados</li>
+                        <li>Análisis de desgaste</li>
+                        <li>Generación de informe técnico</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Detalles técnicos -->
-        <div class="section-pair">
-            <div class="info-box">
-                <div class="box-header">
-                    <h3>Observaciones</h3>
-                </div>
-                <div class="box-content">
-                    <p class="observation">Se requiere el equipo en el taller. Tiempo de entrega 4 horas</p>
-                </div>
-            </div>
+        <!-- Tabla de Costos -->
+        <div class="info-box pricing-box">
+            <table class="cost-table">
+                <thead>
+                    <tr>
+                        <th class="col-code">Código</th>
+                        <th class="col-description">Descripción del Servicio</th>
+                        <th class="col-units">Unidades</th>
+                        <th class="col-price">Valor Unitario</th>
+                        <th class="col-total">Valor Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>J5-MED-001</td><td>Medición de aspas internas</td><td>1</td><td class="numeric">$67.200</td><td class="numeric">$67.200</td></tr>
+                    <tr><td>J5-INS-005</td><td>Inspección técnica complementaria</td><td>1</td><td class="numeric">$312.230</td><td class="numeric">$312.230</td></tr>
+                    <tr class="subtotal"><td colspan="4">Subtotal</td><td class="numeric">$379.430</td></tr>
+                    <tr class="taxes"><td colspan="4">IVA (19%)</td><td class="numeric">$72.092</td></tr>
+                    <tr class="total"><td colspan="4">TOTAL A PAGAR</td><td class="numeric">$451.522</td></tr>
+                </tbody>
+            </table>
+        </div>
 
-            <div class="info-box">
-                <div class="box-header">
-                    <h3>Vehículo</h3>
-                </div>
-                <div class="box-content">
-                    <table class="vehicle-details">
-                        <tr><td>Clase vehículo:</td><td><strong>Mixer varios</strong></td><td>Marca:</td><td>250219</td></tr>
-                        <tr><td>Modelo:</td><td>-</td><td>Kilometraje:</td><td>0</td></tr>
-                        <tr><td>Ubicación:</td><td>Cartagena</td><td>Placa:</td><td>Varios</td></tr>
-                    </table>
-                </div>
+        <!-- Términos y Condiciones -->
+        <div class="info-box terms-box">
+            <div class="box-header">
+                <h3><span class="icon">📄</span> Condiciones Comerciales</h3>
+            </div>
+            <div class="box-content">
+                <ul class="terms-list">
+                    <li>Vigencia: 30 días naturales desde la fecha de emisión</li>
+                    <li>Forma de pago: 50% anticipado, 50% al finalizar</li>
+                    <li>Tasa de descuento financiero: 1.85% mensual</li>
+                    <li>Garantía: 6 meses en mano de obra</li>
+                </ul>
             </div>
         </div>
 
-        <!-- Tabla de costos -->
-        <table class="cost-table">
-            <thead>
-                <tr>
-                    <th class="col-item">Ítem</th>
-                    <th class="col-concept">Concepto</th>
-                    <th class="col-qty">Cant.</th>
-                    <th class="col-time">Tiempo</th>
-                    <th class="col-unit">Vr. unitario</th>
-                    <th class="col-total">Vr. Total</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>1</td><td>Medir diámetro de las aspas internas</td><td></td><td></td><td class="numeric">67.200</td><td></td></tr>
-                <tr class="subitem"><td>1.1</td><td>Acceso a la olla: desmontar tapa manhole</td><td></td><td></td><td></td><td></td></tr>
-                <tr class="total-row"><td colspan="4">Total antes de IVA:</td><td class="numeric">379.430</td><td></td></tr>
-                <tr class="total-row"><td colspan="4">IVA</td><td class="numeric">72.092</td><td></td></tr>
-                <tr class="total-row"><td colspan="4">Total</td><td class="numeric">451.522</td><td></td></tr>
-            </tbody>
-        </table>
-
-        <!-- Pie de página -->
-        <div class="section-pair footer">
-            <div class="info-box validity">
-                <p class="validity-text"><strong>Vigencia:</strong> 30 días desde la fecha de expedición</p>
-                <p class="discount-rate">Tasa descuento financiero por pronto pago: 1,85% mes</p>
+        <!-- Firmas y Validación -->
+        <div class="section-pair">
+            <div class="info-box validity-box">
+                <div class="qr-code">
+                    <img src="qr.png" alt="Código QR Validación">
+                </div>
+                <div class="validity-info">
+                    <p class="validity-text">Documento válido con firma digital</p>
+                    <p class="document-code">Código único: J5-2025-COT250219</p>
+                </div>
             </div>
-            
-            <div class="info-box signature">
-                <div class="signature-line"></div>
-                <p class="signatory">Jaime Sáenz Pérez</p>
-                <p class="contact">Tel: +57 300 814 1986</p>
+
+            <div class="info-box signature-box">
+                <div class="signature-container">
+                    <div class="signature-line"></div>
+                    <p class="signatory">Jaime Sáenz Pérez</p>
+                    <p class="position">Director de Operaciones</p>
+                    <p class="certification">Certificado Digital J5-OP-2025</p>
+                </div>
             </div>
         </div>
     </div>
