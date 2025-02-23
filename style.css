@@ -1,200 +1,238 @@
-/* ESTILOS PROFESIONALES - IMPRESIÓN */
+/* Estilos Base */
 body {
-    font-family: "Times New Roman", serif;
-    font-size: 8pt;
-    line-height: 1;
-    margin: 1.8cm 1.5cm;
-    color: #000;
+    font-family: 'Arial', sans-serif;
+    font-size: 10pt;
+    line-height: 1.4;
+    margin: 1.5cm;
+    color: #2c3e50;
     background: #fff !important;
     -webkit-print-color-adjust: exact;
 }
 
-/* ESTRUCTURA PRINCIPAL */
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 14pt;
-    max-width: 100%;
+/* Encabezado Corporativo */
+.company-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #2980b9;
 }
 
-/* SISTEMA DE 2 COLUMNAS */
+.company-logo {
+    width: 80px;
+    margin-right: 1.5rem;
+}
+
+.header-details h1 {
+    font-family: 'Georgia', serif;
+    font-size: 18pt;
+    color: #2c3e50;
+    margin: 0 0 0.2rem 0;
+    letter-spacing: 0.5px;
+}
+
+.company-subtitle {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #34495e;
+    margin: 0 0 0.5rem 0;
+    text-transform: uppercase;
+}
+
+.company-meta {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 9.5pt;
+    color: #7f8c8d;
+}
+
+/* Sistema de Grid */
 .section-pair {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 14pt;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
     page-break-inside: avoid;
 }
 
-/* CAJAS DE CONTENIDO */
 .info-box {
-    border: 0.8pt solid #333;
-    border-radius: 5pt;
-    padding: 12pt;
-    display: flex;
-    flex-direction: column;
-    min-height: 130pt;
+    border: 1px solid #ecf0f1;
+    border-radius: 8px;
+    padding: 1.2rem;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    page-break-inside: avoid;
 }
 
-/* JERARQUÍA TIPOGRÁFICA */
-h1 {
-    font-size: 14.5pt;
-    font-weight: 700;
-    margin: 0 0 4pt 0;
-    letter-spacing: 0.3pt;
-}
-
-.subtitle {
-    font-size: 12pt;
-    font-weight: 600;
-    margin: 0 0 8pt 0;
-    color: #444;
-}
-
-.nit {
-    font-size: 10.8pt;
-    margin: 6pt 0;
-    letter-spacing: 0.1pt;
-}
-
-.location-details p {
-    font-size: 10.5pt;
-    margin: 3pt 0;
-    color: #666;
-}
-
-/* ENCABEZADOS DE SECCIÓN */
+/* Encabezados de Sección */
 .box-header {
-    background: #f8f8f8;
-    border-bottom: 0.8pt solid #333;
-    padding: 6pt 8pt;
-    margin: -12pt -12pt 10pt -12pt;
-    border-radius: 5pt 5pt 0 0;
+    border-bottom: 1px solid #2980b9;
+    margin: -1.2rem -1.2rem 1rem -1.2rem;
+    padding: 0.8rem 1.2rem;
+    background: #f8f9fa;
+    border-radius: 8px 8px 0 0;
 }
 
 .box-header h3 {
     font-size: 11.5pt;
-    font-weight: 700;
     margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.2pt;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-/* CONTENIDO ESPECÍFICO */
-.main-task {
-    font-size: 10.8pt;
-    margin: 12pt 0;
-    line-height: 1.5;
+.icon {
+    font-size: 14pt;
 }
 
-.task-list li {
-    font-size: 10.5pt;
-    margin: 6pt 0;
-    padding-left: 4pt;
+/* Listas y Tablas */
+.task-list, .procedure-list {
+    padding-left: 1.5rem;
 }
 
-.observation {
-    font-size: 10.5pt;
-    line-height: 1.6;
-    margin: 10pt 0;
+.task-list li, .procedure-list li {
+    margin: 0.5rem 0;
+    position: relative;
 }
 
-/* TABLAS PROFESIONALES */
-.quote-table td {
-    padding: 4pt 6pt;
-    vertical-align: baseline;
-    font-size: 10.5pt;
-}
-
-.vehicle-details td {
-    padding: 3pt 5pt;
-    font-size: 10.2pt;
-    vertical-align: middle;
+.task-list li::before {
+    content: '';
+    position: absolute;
+    left: -1.2rem;
+    width: 6px;
+    height: 6px;
+    background: #2980b9;
+    border-radius: 50%;
+    top: 0.5em;
 }
 
 .cost-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 16pt 0;
-    font-size: 10.5pt;
+    margin: 1rem 0;
 }
 
 .cost-table th {
-    background: #f0f0f0;
-    font-weight: 700;
-    padding: 8pt 6pt;
-    border: 0.8pt solid #333;
+    background: #2c3e50;
+    color: white;
+    padding: 0.8rem;
+    font-weight: 600;
+    text-align: left;
 }
 
 .cost-table td {
-    padding: 6pt;
-    border: 0.8pt solid #ddd;
+    padding: 0.6rem;
+    border-bottom: 1px solid #ecf0f1;
 }
 
-/* NUMERACIÓN Y TOTALES */
+.cost-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
 .numeric {
-    font-family: "Courier New", monospace;
-    font-size: 10.8pt;
+    font-family: 'Courier New', monospace;
     text-align: right;
-    padding-right: 12pt !important;
 }
 
-.total-row td {
-    background: #f8f8f8;
+/* Totales y Subtotales */
+.subtotal td {
+    background: #ecf0f1 !important;
+    font-weight: 600;
+}
+
+.taxes td {
+    background: #f8f9fa !important;
+}
+
+.total td {
+    background: #2c3e50 !important;
+    color: white;
     font-weight: 700;
-    letter-spacing: 0.1pt;
 }
 
-/* PIE DE PÁGINA */
-.footer {
-    margin-top: 20pt;
-}
-
-.validity-text {
-    font-size: 10.2pt;
-    margin: 8pt 0;
-}
-
-.discount-rate {
-    font-size: 10pt;
-    color: #555;
+/* Firmas y Validación */
+.signature-box {
+    text-align: center;
 }
 
 .signature-line {
-    border-top: 0.8pt solid #333;
-    width: 160pt;
-    margin: 6pt auto 8pt auto;
+    border-bottom: 1px solid #2c3e50;
+    width: 60%;
+    margin: 1.5rem auto;
 }
 
 .signatory {
     font-size: 11pt;
     font-weight: 600;
-    margin: 4pt 0;
+    margin: 0.5rem 0;
 }
 
-.contact {
-    font-size: 10pt;
-    color: #666;
+.position {
+    font-size: 9.5pt;
+    color: #7f8c8d;
 }
 
-/* IMPRESIÓN */
+.validity-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.qr-code img {
+    width: 80px;
+    height: 80px;
+}
+
+.validity-text {
+    font-size: 9.5pt;
+    color: #27ae60;
+    font-weight: 600;
+}
+
+.document-code {
+    font-size: 8.5pt;
+    color: #95a5a6;
+}
+
+/* Estilos de Impresión */
 @media print {
     @page {
         margin: 1.5cm;
         size: A4;
     }
 
-    .section-pair {
-        break-inside: avoid-page;
+    body {
+        margin: 0;
     }
 
     .info-box {
-        min-height: auto;
-        page-break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    .cost-table th {
+        background: #2c3e50 !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .total td {
+        background: #2c3e50 !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .company-header {
+        border-color: #ccc;
     }
 }
 
-.label {
-    font-weight: 600;
-    min-width: 28mm;
-    display: inline-block;
+/* Elementos Adicionales */
+.terms-list {
+    columns: 2;
+    column-gap: 2rem;
+}
+
+.terms-list li {
+    break-inside: avoid;
+    margin-bottom: 0.5rem;
 }
