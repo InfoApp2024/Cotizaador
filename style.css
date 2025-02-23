@@ -1,121 +1,200 @@
-/* Estilos base */
+/* ESTILOS PROFESIONALES - IMPRESIÓN */
 body {
     font-family: "Times New Roman", serif;
-    font-size: 11pt;
-    margin: 1.5cm;
-    line-height: 1.35;
+    font-size: 10.5pt;
+    line-height: 1.4;
+    margin: 1.8cm 1.5cm;
     color: #000;
     background: #fff !important;
     -webkit-print-color-adjust: exact;
 }
 
-/* Contenedor principal */
+/* ESTRUCTURA PRINCIPAL */
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 15pt;
+    gap: 14pt;
     max-width: 100%;
 }
 
-/* Pares de secciones */
+/* SISTEMA DE 2 COLUMNAS */
 .section-pair {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15pt;
+    gap: 16pt;
     page-break-inside: avoid;
 }
 
-/* Cajas con bordes */
+/* CAJAS DE CONTENIDO */
 .info-box {
-    border: 0.75pt solid #000;
-    border-radius: 4pt;
-    padding: 10pt;
+    border: 0.8pt solid #333;
+    border-radius: 5pt;
+    padding: 12pt;
     display: flex;
     flex-direction: column;
+    min-height: 130pt;
 }
 
-/* Encabezados */
+/* JERARQUÍA TIPOGRÁFICA */
+h1 {
+    font-size: 14.5pt;
+    font-weight: 700;
+    margin: 0 0 4pt 0;
+    letter-spacing: 0.3pt;
+}
+
+.subtitle {
+    font-size: 12pt;
+    font-weight: 600;
+    margin: 0 0 8pt 0;
+    color: #444;
+}
+
+.nit {
+    font-size: 10.8pt;
+    margin: 6pt 0;
+    letter-spacing: 0.1pt;
+}
+
+.location-details p {
+    font-size: 10.5pt;
+    margin: 3pt 0;
+    color: #666;
+}
+
+/* ENCABEZADOS DE SECCIÓN */
 .box-header {
     background: #f8f8f8;
-    border-bottom: 0.75pt solid #000;
-    padding: 4pt 8pt;
-    margin: -10pt -10pt 8pt -10pt;
-    border-radius: 4pt 4pt 0 0;
+    border-bottom: 0.8pt solid #333;
+    padding: 6pt 8pt;
+    margin: -12pt -12pt 10pt -12pt;
+    border-radius: 5pt 5pt 0 0;
 }
 
 .box-header h3 {
-    font-size: 12pt;
-    margin: 0;
+    font-size: 11.5pt;
     font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2pt;
 }
 
-/* Contenido */
-.box-content {
-    flex: 1;
-    padding: 8pt 4pt;
+/* CONTENIDO ESPECÍFICO */
+.main-task {
+    font-size: 10.8pt;
+    margin: 12pt 0;
+    line-height: 1.5;
+}
+
+.task-list li {
+    font-size: 10.5pt;
+    margin: 6pt 0;
+    padding-left: 4pt;
+}
+
+.observation {
+    font-size: 10.5pt;
+    line-height: 1.6;
+    margin: 10pt 0;
+}
+
+/* TABLAS PROFESIONALES */
+.quote-table td {
+    padding: 4pt 6pt;
+    vertical-align: baseline;
     font-size: 10.5pt;
 }
 
-/* Tablas */
-.quote-table td {
-    padding: 3pt;
-    vertical-align: top;
+.vehicle-details td {
+    padding: 3pt 5pt;
+    font-size: 10.2pt;
+    vertical-align: middle;
 }
 
-.vehicle-table td {
-    padding: 2pt 4pt;
-}
-
-.main-table {
+.cost-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 12pt 0;
+    margin: 16pt 0;
+    font-size: 10.5pt;
 }
 
-.main-table th, .main-table td {
-    border: 0.75pt solid #000;
+.cost-table th {
+    background: #f0f0f0;
+    font-weight: 700;
+    padding: 8pt 6pt;
+    border: 0.8pt solid #333;
+}
+
+.cost-table td {
     padding: 6pt;
-    text-align: left;
+    border: 0.8pt solid #ddd;
 }
 
-/* Numeración */
+/* NUMERACIÓN Y TOTALES */
 .numeric {
     font-family: "Courier New", monospace;
+    font-size: 10.8pt;
     text-align: right;
-    padding-right: 10pt !important;
+    padding-right: 12pt !important;
 }
 
-/* Totales */
 .total-row td {
-    background-color: #f8f8f8;
+    background: #f8f8f8;
     font-weight: 700;
+    letter-spacing: 0.1pt;
 }
 
-/* Firma */
+/* PIE DE PÁGINA */
+.footer {
+    margin-top: 20pt;
+}
+
+.validity-text {
+    font-size: 10.2pt;
+    margin: 8pt 0;
+}
+
+.discount-rate {
+    font-size: 10pt;
+    color: #555;
+}
+
 .signature-line {
-    border-top: 0.75pt solid #000;
+    border-top: 0.8pt solid #333;
     width: 160pt;
-    margin: 0 auto 6pt auto;
+    margin: 6pt auto 8pt auto;
 }
 
-/* Impresión */
+.signatory {
+    font-size: 11pt;
+    font-weight: 600;
+    margin: 4pt 0;
+}
+
+.contact {
+    font-size: 10pt;
+    color: #666;
+}
+
+/* IMPRESIÓN */
 @media print {
     @page {
         margin: 1.5cm;
         size: A4;
     }
-    
+
     .section-pair {
-        break-inside: avoid;
+        break-inside: avoid-page;
     }
-    
+
     .info-box {
         min-height: auto;
+        page-break-inside: avoid;
     }
 }
 
 .label {
-    font-weight: 700;
-    min-width: 25mm;
+    font-weight: 600;
+    min-width: 28mm;
     display: inline-block;
 }
