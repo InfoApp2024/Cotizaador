@@ -2,99 +2,88 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <title>Formato de cotización</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Primera fila: Encabezado dividido -->
-        <div class="header-row">
-            <div class="header-left">
-                <img src="/api/placeholder/40/40" alt="JS Logo" class="logo">
-                <div class="company-title">
-                    JS OUTSOURCING SAS<br>
-                    MANTENIMIENTO AUTOMOTRIZ<br>
-                    NIT 901.387.834-5<br>
-                    BARRANQUILLA - CARTAGENA<br>
-                    COLOMBIA
-                </div>
-            </div>
-            <div class="header-right">
-                <table class="quote-details">
-                    <tr>
-                        <td class="label">Fecha</td>
-                        <td class="value">19/02/2025</td>
-                        <td class="label">Número:</td>
-                        <td class="value">COT250219</td>
-                        <td>Hoja 1 de 2</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Cliente</td>
-                        <td class="value">NIT:</td>
-                        <td class="value" colspan="3">900,893,254</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Razón Social</td>
-                        <td class="value" colspan="4">Concreto Movil Colombia SAS</td>
-                    </tr>
-                    <tr>
-                        <td class="label">Dirección:</td>
-                        <td class="value" colspan="4">CALLE 31 A 26 15 FLORIDABLANCA</td>
-                    </tr>
-                </table>
+    <div class="contenedor">
+        <!-- Encabezado -->
+        <div class="encabezado">
+            <div class="titulo-principal">Empresa SAS</div>
+            <div class="detalles-empresa">
+                <span>NIT 000.000.000-0</span>
+                <span>Ciudad - País</span>
             </div>
         </div>
 
-        <!-- Segunda fila: Trabajos -->
-        <div class="work-row">
-            <div class="work-box">
-                <div class="box-title">Trabajos solicitados:</div>
-                <div class="box-content">
-                    1. Medir diámetro de las aspas internas de las ollas de los mixers
+        <!-- Sección de datos -->
+        <div class="seccion-datos">
+            <div class="columna-izq">
+                <div class="grupo-dato">
+                    <span class="etiqueta">Fecha:</span>
+                    <span class="valor">00/00/0000</span>
+                </div>
+                <div class="grupo-dato">
+                    <span class="etiqueta">Número:</span>
+                    <span class="valor">COT00000</span>
                 </div>
             </div>
-            <div class="work-box">
-                <div class="box-title">Trabajos a realizar:</div>
-                <div class="box-content">
-                    Acceso a la olla - retirar tapa manhole<br>
-                    Toma de medidas<br>
-                    Cierre de tapa manhole<br>
-                    Generación de informes
+            
+            <div class="columna-der">
+                <div class="grupo-dato">
+                    <span class="etiqueta">Cliente NIT:</span>
+                    <span class="valor">000,000,000</span>
+                </div>
+                <div class="grupo-dato">
+                    <span class="etiqueta">Dirección:</span>
+                    <span class="valor">CALLE 00 # 00-00</span>
                 </div>
             </div>
         </div>
 
-        <!-- Tercera fila: Observaciones y Vehículo -->
-        <div class="info-row">
-            <div class="info-box">
-                <div class="box-title">Observaciones</div>
-                <div class="box-content">
-                    Se requiere el equipo en el taller. Tiempo de entrega 4 horas
-                </div>
-            </div>
-            <div class="info-box">
-                <div class="box-title">Vehículo:</div>
-                <div class="vehicle-details">
-                    <table>
-                        <tr>
-                            <td>Clase vehículo:</td>
-                            <td>Mixer varios</td>
-                            <td>Marca:</td>
-                            <td>250219</td>
-                        </tr>
-                        <tr>
-                            <td>Modelo:</td>
-                            <td>-</td>
-                            <td>Kilometraje:</td>
-                            <td>0</td>
-                        </tr>
-                        <tr>
-                            <td>Ubicación:</td>
-                            <td>Cartagena</td>
-                            <td>Placa:</td>
-                            <td>Varios</td>
-                        </tr>
-                    </table>
-                </div>
+        <!-- Tabla principal -->
+        <table class="tabla-principal">
+            <thead>
+                <tr>
+                    <th class="col-item">Ítem</th>
+                    <th class="col-concepto">Concepto</th>
+                    <th class="col-cantidad">Cantidad</th>
+                    <th class="col-tiempo">Tiempo</th>
+                    <th class="col-unitario">Vr. unitario</th>
+                    <th class="col-total">Vr. Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Descripción principal del ítem</td>
+                    <td></td>
+                    <td></td>
+                    <td class="valor-numerico">00.000</td>
+                    <td></td>
+                </tr>
+                <tr class="subitem">
+                    <td>1.1</td>
+                    <td>Subitem con sangría</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="total">
+                    <td colspan="4">Total antes de IVA:</td>
+                    <td class="valor-numerico">000.000</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Pie de página -->
+        <div class="pie-pagina">
+            <div class="vigencia">Vigencia: 00 días</div>
+            <div class="firma">
+                <div class="linea-firma"></div>
+                <span>Firma autorizada</span>
             </div>
         </div>
     </div>
