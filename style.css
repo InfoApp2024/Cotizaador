@@ -21,7 +21,7 @@ body {
 .section-pair {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16pt;
+    gap: 14pt;
     page-break-inside: avoid;
 }
 
