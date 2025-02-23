@@ -1,149 +1,121 @@
-/* ESTILOS PRINCIPALES PARA DISEÑO DE 2 COLUMNAS */
+/* Estilos base */
 body {
     font-family: "Times New Roman", serif;
     font-size: 11pt;
-    line-height: 1.3;
     margin: 1.5cm;
+    line-height: 1.35;
     color: #000;
     background: #fff !important;
     -webkit-print-color-adjust: exact;
 }
 
-/* CONTENEDOR PRINCIPAL */
+/* Contenedor principal */
 .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12pt;
+    grid-template-columns: 1fr;
+    gap: 15pt;
     max-width: 100%;
-    margin: 0 auto;
 }
 
-/* PARES DE SECCIONES - DISEÑO DE 2 COLUMNAS */
+/* Pares de secciones */
 .section-pair {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15pt;
-    width: 100%;
-    margin-bottom: 15pt;
     page-break-inside: avoid;
 }
 
-/* ESTILOS COMUNES PARA CAJAS */
-.info-box, .work-box, .tech-box {
+/* Cajas con bordes */
+.info-box {
     border: 0.75pt solid #000;
     border-radius: 4pt;
-    padding: 8pt;
-    min-height: 80pt;
+    padding: 10pt;
     display: flex;
     flex-direction: column;
 }
 
-/* ENCABEZADOS COMPACTOS */
+/* Encabezados */
 .box-header {
     background: #f8f8f8;
     border-bottom: 0.75pt solid #000;
-    padding: 4pt 6pt;
-    margin: -8pt -8pt 6pt -8pt;
+    padding: 4pt 8pt;
+    margin: -10pt -10pt 8pt -10pt;
     border-radius: 4pt 4pt 0 0;
 }
 
 .box-header h3 {
-    font-size: 11pt;
-    font-weight: 700;
+    font-size: 12pt;
     margin: 0;
-    letter-spacing: 0.1pt;
+    font-weight: 700;
 }
 
-/* CONTENIDO DE CAJAS */
+/* Contenido */
 .box-content {
     flex: 1;
-    padding: 0 4pt;
+    padding: 8pt 4pt;
     font-size: 10.5pt;
-    text-align: justify;
 }
 
-/* ENCABEZADO PRINCIPAL */
-.main-header {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15pt;
-    margin-bottom: 12pt;
-}
-
-.company-info, .quote-info {
-    padding: 10pt;
-    border: 0.75pt solid #000;
-    border-radius: 4pt;
-}
-
-/* TABLAS EN 2 COLUMNAS */
-.table-pair {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15pt;
-}
-
-/* ESTILOS ESPECÍFICOS PARA DATOS */
-.detail-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 10pt;
-}
-
-.detail-table td {
+/* Tablas */
+.quote-table td {
     padding: 3pt;
-    border: 0.5pt solid #ddd;
     vertical-align: top;
 }
 
-/* NUMERACIÓN PROFESIONAL */
+.vehicle-table td {
+    padding: 2pt 4pt;
+}
+
+.main-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12pt 0;
+}
+
+.main-table th, .main-table td {
+    border: 0.75pt solid #000;
+    padding: 6pt;
+    text-align: left;
+}
+
+/* Numeración */
 .numeric {
     font-family: "Courier New", monospace;
     text-align: right;
-    padding-right: 8pt !important;
+    padding-right: 10pt !important;
 }
 
-/* FIRMA Y VIGENCIA */
-.footer-section {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15pt;
-    margin-top: 20pt;
+/* Totales */
+.total-row td {
+    background-color: #f8f8f8;
+    font-weight: 700;
 }
 
-/* CONTROL DE IMPRESIÓN */
+/* Firma */
+.signature-line {
+    border-top: 0.75pt solid #000;
+    width: 160pt;
+    margin: 0 auto 6pt auto;
+}
+
+/* Impresión */
 @media print {
     @page {
         margin: 1.5cm;
         size: A4;
     }
     
-    .section-pair, .main-header, .footer-section {
+    .section-pair {
         break-inside: avoid;
     }
     
-    .info-box, .work-box {
+    .info-box {
         min-height: auto;
     }
 }
 
-/* ALINEACIÓN ESPECÍFICA */
-.text-right { text-align: right; }
-.text-center { text-align: center; }
-.bold { font-weight: 700; }
-
-/* AJUSTES DE ESPACIADO */
-.compact-text p {
-    margin: 3pt 0;
-    line-height: 1.2;
-}
-
-/* BORDES CONSISTENTES */
-.section-border {
-    border: 0.75pt solid #000;
-    border-radius: 4pt;
-    padding: 8pt;
+.label {
+    font-weight: 700;
+    min-width: 25mm;
+    display: inline-block;
 }
