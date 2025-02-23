@@ -6,84 +6,75 @@
 </head>
 <body>
     <div class="container">
-        <!-- Primera fila -->
-        <div class="row">
-            <div class="box company-box">
-                <div class="company-info">
-                    <img src="/api/placeholder/50/50" alt="JS Logo" class="logo">
-                    <h2>JS OUTSOURCING SAS</h2>
-                    <p>MANTENIMIENTO AUTOMOTRIZ</p>
-                    <p>NIT 901.387.834-5</p>
-                    <p>BARRANQUILLA - CARTAGENA</p>
-                    <p>COLOMBIA</p>
+        <!-- Primera fila: Encabezado dividido -->
+        <div class="header-row">
+            <div class="header-left">
+                <img src="/api/placeholder/40/40" alt="JS Logo" class="logo">
+                <div class="company-title">
+                    JS OUTSOURCING SAS<br>
+                    MANTENIMIENTO AUTOMOTRIZ<br>
+                    NIT 901.387.834-5<br>
+                    BARRANQUILLA - CARTAGENA<br>
+                    COLOMBIA
                 </div>
             </div>
-            <div class="box quote-box">
-                <div class="quote-info">
-                    <h3>Cotización</h3>
-                    <table class="quote-details">
-                        <tr>
-                            <td>Fecha</td>
-                            <td>19/02/2025</td>
-                        </tr>
-                        <tr>
-                            <td>Número:</td>
-                            <td>COT250219</td>
-                        </tr>
-                        <tr>
-                            <td>Hoja</td>
-                            <td>1 de 2</td>
-                        </tr>
-                    </table>
+            <div class="header-right">
+                <table class="quote-details">
+                    <tr>
+                        <td class="label">Fecha</td>
+                        <td class="value">19/02/2025</td>
+                        <td class="label">Número:</td>
+                        <td class="value">COT250219</td>
+                        <td>Hoja 1 de 2</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Cliente</td>
+                        <td class="value">NIT:</td>
+                        <td class="value" colspan="3">900,893,254</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Razón Social</td>
+                        <td class="value" colspan="4">Concreto Movil Colombia SAS</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Dirección:</td>
+                        <td class="value" colspan="4">CALLE 31 A 26 15 FLORIDABLANCA</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Segunda fila: Trabajos -->
+        <div class="work-row">
+            <div class="work-box">
+                <div class="box-title">Trabajos solicitados:</div>
+                <div class="box-content">
+                    1. Medir diámetro de las aspas internas de las ollas de los mixers
+                </div>
+            </div>
+            <div class="work-box">
+                <div class="box-title">Trabajos a realizar:</div>
+                <div class="box-content">
+                    Acceso a la olla - retirar tapa manhole<br>
+                    Toma de medidas<br>
+                    Cierre de tapa manhole<br>
+                    Generación de informes
                 </div>
             </div>
         </div>
 
-        <!-- Segunda fila -->
-        <div class="row">
-            <div class="box client-box">
-                <div class="client-info">
-                    <table class="client-details">
-                        <tr>
-                            <td>Cliente NIT:</td>
-                            <td>900,893,254</td>
-                        </tr>
-                        <tr>
-                            <td>Razón Social:</td>
-                            <td>Concreto Movil Colombia SAS</td>
-                        </tr>
-                        <tr>
-                            <td>Dirección:</td>
-                            <td>CALLE 31 A 26 15 FLORIDABLANCA</td>
-                        </tr>
-                    </table>
+        <!-- Tercera fila: Observaciones y Vehículo -->
+        <div class="info-row">
+            <div class="info-box">
+                <div class="box-title">Observaciones</div>
+                <div class="box-content">
+                    Se requiere el equipo en el taller. Tiempo de entrega 4 horas
                 </div>
             </div>
-            <div class="box work-box">
-                <div class="work-info">
-                    <h4>Trabajos solicitados:</h4>
-                    <p>1. Medir diámetro de las aspas internas de las ollas de los mixers</p>
-                    <h4>Trabajos a realizar:</h4>
-                    <p>- Acceso a la olla - retirar tapa manhole</p>
-                    <p>- Toma de medidas</p>
-                    <p>- Cierre de tapa manhole</p>
-                    <p>- Generación de informes</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Tercera fila -->
-        <div class="row">
-            <div class="box observations-box">
-                <div class="observations">
-                    <h4>Observaciones</h4>
-                    <p>Se requiere el equipo en el taller. Tiempo de entrega 4 horas</p>
-                </div>
-            </div>
-            <div class="box vehicle-box">
-                <div class="vehicle-info">
-                    <h4>Vehículo:</h4>
-                    <table class="vehicle-details">
+            <div class="info-box">
+                <div class="box-title">Vehículo:</div>
+                <div class="vehicle-details">
+                    <table>
                         <tr>
                             <td>Clase vehículo:</td>
                             <td>Mixer varios</td>
